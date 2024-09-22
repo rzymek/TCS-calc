@@ -31,6 +31,8 @@ export function App() {
         <PickOne field="attackIntegrity"/>
         <PickOne field="defIntegrity"/>
         <PickOne field="defDetachment"/>
+        <PickOne field="attackRoll"/>
+        <PickOne field="defenderRoll"/>
 
         <RollAndResolve state={state} onResult={setResult}/>
 

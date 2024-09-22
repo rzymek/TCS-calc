@@ -23,6 +23,9 @@ export function RollAndResolve(props: {
             <span>
             Attacker: {resolution.attacker}<br/>
             Defender: {resolution.defender}<br/>
+            Attacker Tactical Position: {resolution.attackerTacticalPosition}<br/>
+            Defender Tactical Position: {resolution.defenderTacticalPosition}<br/>
+            Result: <b>{resolution.result}</b><br/>
             </span>
             </div>
             {/*<Roll2D6 onRoll={([d1, d2]) => setRoll(d1 * 10 + d2)}/>*/}

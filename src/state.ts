@@ -53,6 +53,14 @@ export const pickOneDefs = {
         label: 'Defender detachment',
         values: ['yes','no']
     },
+    attackRoll: {
+        label: 'Attacker roll',
+        values: [0,1,2,3,4,5,6,7,8,9]
+    },
+    defenderRoll: {
+        label: 'Defender roll',
+        values: [0,1,2,3,4,5,6,7,8,9]
+    },
 } as const;
 export const pickManyDefs = {
     // firererEnv: {
