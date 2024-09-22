@@ -10,15 +10,15 @@ export function firepowerDef(index: number) {
 
 export const pickOneDefs = {
     attackArty: {
-        label: 'Attack Arty',
+        label: 'Attacker Arty',
         values: ['yes','no']
     },
     defArty: {
-        label: 'Def Arty',
+        label: 'Defender Arty',
         values: ['yes','no']
     },
     defenderTerrain: {
-        label: 'Def Terrain',
+        label: 'Defender Terrain',
         values: ['defensible','entr. front','def. in fort'],
     },
     hqAttackStars:{
@@ -38,15 +38,15 @@ export const pickOneDefs = {
         values: [0, 1, 2, 3, 4, 5]
     },
     attackSupport: {
-        label: 'Attack support',
+        label: 'Other division support',
         values: ['yes','no']
     },
     attackIntegrity: {
-        label: 'Att.integrity',
+        label: 'Attack integrity',
         values: ['yes','no']
     },
     defIntegrity: {
-        label: 'Def.integrity',
+        label: 'Defender integrity',
         values: ['yes','no']
     },
     defDetachment: {
