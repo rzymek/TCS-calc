@@ -1,5 +1,3 @@
-import {range} from "remeda";
-
 export function firepowerDef(index: number) {
     return {
         label: `Firepower${index + 1}`,
@@ -8,56 +6,59 @@ export function firepowerDef(index: number) {
             1, 2, 3, 4, 5, 6, 7, 8, 9, 10
         ],
     } as const
-};
+}
 
 export const pickOneDefs = {
-    distance: {
-        label: 'Distance',
-        values: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+    attackArty: {
+        label: 'Attack Arty',
+        values: ['yes','no']
     },
-    firererType: {
-        label: 'Firerer Type',
-        values: ['inf', 'low', 'high', 'mortar', 'arty']
+    defArty: {
+        label: 'Def Arty',
+        values: ['yes','no']
     },
-    firererSteps: {
-        label: 'Firerer Steps',
-        values: range(1, 40 + 1)
+    defenderTerrain: {
+        label: 'Def Terrain',
+        values: ['defensible','entr. front','def. in fort'],
     },
-    targetSteps: {
-        label: "Target Steps",
-        values: ['1-2', '3-4', '5-7', '8-9', '10-12', '13-19', '20+']
+    hqAttackStars:{
+        label: 'Attacker HQ Stars',
+        values: ['yes','no']
     },
-    targetTerrain: {
-        label: "Target Terrain",
-        values: ['billiard', 'open', 'partly', 'protective']
+    hqDefStars:{
+        label: 'Defender HQ Stars',
+        values: ['yes','no']
     },
-    targetPosture: {
-        label: "Target Posture",
-        values: ['move', 'fire', 'dug in'],
+    attackStars:{
+        label: 'Attacker stars',
+        values: [0,1,2,3,4,5]
     },
-    targetMorale: {
-        label: 'Target Morale',
-        values: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    defStars: {
+        label: 'Defender stars',
+        values: [0, 1, 2, 3, 4, 5]
     },
-    targetStepLoses: {
-        label: 'Target step Loses',
-        values: [1, 2, 3, 4, 5]
+    attackSupport: {
+        label: 'Attack support',
+        values: ['yes','no']
     },
-    targetBnMorale: {
-        label: 'Target Bn Morale',
-        values: [1, 2, 3, 4, 5, 6, 7, 8, 9],
-    }
+    attackIntegrity: {
+        label: 'Att.integrity',
+        values: ['yes','no']
+    },
+    defIntegrity: {
+        label: 'Def.integrity',
+        values: ['yes','no']
+    },
+    defDetachment: {
+        label: 'Defender detachment',
+        values: ['yes','no']
+    },
 } as const;
 export const pickManyDefs = {
-    firererEnv: {
-        label: 'Firerer Env',
-        values: ['any sup/par', 'cross fire', 'arty zone', 'smoke']
-    },
-    targetEnv: {
-        label: "Target Environment",
-        values: ['night', 'illum / twilight', 'road move', 'firing', 'all sup/par',
-            'P+2 in hex', 'arty zone', 'smoke', 'attacked by sortie', 'unassigned']
-    },
+    // firererEnv: {
+    //     label: 'Firerer Env',
+    //     values: ['any sup/par', 'cross fire', 'arty zone', 'smoke']
+    // },
 } as const;
 
 type TPickOne = typeof pickOneDefs;
@@ -70,12 +71,7 @@ export type State = {
     [key in SingleSelectionFields]?: TPickOne[key]['values'][number]
 } & {
     [key in MultipleSelectionFields]: TPickMany[key]['values'][number][]
-} & {
-    firepower: (number|undefined)[]
-};
+} ;
 
 export const initialState:State = {
-    firepower: [undefined],
-    firererEnv: [],
-    targetEnv: [],
 }
