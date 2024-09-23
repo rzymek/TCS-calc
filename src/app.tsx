@@ -33,6 +33,7 @@ export function App() {
         <PickOne field="defenderRoll"/>
 
         <RollAndResolve state={state} onResult={setResult}/>
+        <PickOne field="counterattack"/>
 
     </Context.Provider>
 }

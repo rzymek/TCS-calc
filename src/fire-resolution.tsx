@@ -64,11 +64,21 @@ export function fireResolution(state: State) {
   const attackerTacticalPosition = tpd[state.attackRoll ?? 0][Math.min(attacker + 1, 10)]
   const defenderTacticalPosition = tpd[state.defenderRoll ?? 0][Math.min(defender + 1, 10)]
   const defenderRow = attackResultTable[attackerTacticalPosition] ?? {};
+  let result = defenderRow[defenderTacticalPosition];
+  if(state.counterattack === 'yes') {
+    let originalDefender = defender;
+    defender = attacker;
+    attacker = originalDefender + 3;
+    if(result === 'Counter Attack'){
+      result = 'Attacker Retreat'
+    }
+  }
+
   return {
     attacker,
     defender,
     attackerTacticalPosition,
     defenderTacticalPosition,
-    result: defenderRow[defenderTacticalPosition],
+    result,
   };
 }
