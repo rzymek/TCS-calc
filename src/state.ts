@@ -23,7 +23,7 @@ export const pickOneDefs = {
         values: [0, 1, 2, 3, 4, 5]
     },
     attackSupport: {
-        label: 'Other division support',
+        label: 'Attack div. support',
         values: ['yes','no']
     },
     defDetachment: {
