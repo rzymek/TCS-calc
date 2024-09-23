@@ -9,25 +9,10 @@ export function firepowerDef(index: number) {
 }
 
 export const pickOneDefs = {
-    attackArty: {
-        label: 'Attacker Arty',
-        values: ['yes','no']
-    },
-    defArty: {
-        label: 'Defender Arty',
-        values: ['yes','no']
-    },
+
     defenderTerrain: {
         label: 'Defender Terrain',
         values: ['defensible','entr. front','def. in fort'],
-    },
-    hqAttackStars:{
-        label: 'Attacker HQ Stars',
-        values: ['yes','no']
-    },
-    hqDefStars:{
-        label: 'Defender HQ Stars',
-        values: ['yes','no']
     },
     attackStars:{
         label: 'Attacker stars',
@@ -39,14 +24,6 @@ export const pickOneDefs = {
     },
     attackSupport: {
         label: 'Other division support',
-        values: ['yes','no']
-    },
-    attackIntegrity: {
-        label: 'Attack integrity',
-        values: ['yes','no']
-    },
-    defIntegrity: {
-        label: 'Defender integrity',
         values: ['yes','no']
     },
     defDetachment: {
@@ -63,10 +40,18 @@ export const pickOneDefs = {
     },
 } as const;
 export const pickManyDefs = {
-    // firererEnv: {
-    //     label: 'Firerer Env',
-    //     values: ['any sup/par', 'cross fire', 'arty zone', 'smoke']
-    // },
+    arty: {
+        label: 'Artillery',
+        values: ['attacker','defender']
+    },
+    hqStars:{
+        label: 'Use HQ Stars',
+        values: ['attacker','defender']
+    },
+    integrity: {
+        label: 'Division integrity',
+        values: ['attacker','defender']
+    },
 } as const;
 
 type TPickOne = typeof pickOneDefs;
@@ -82,4 +67,7 @@ export type State = {
 } ;
 
 export const initialState:State = {
+    arty: [],
+    hqStars: [],
+    integrity: [],
 }

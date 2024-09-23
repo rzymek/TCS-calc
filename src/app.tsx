@@ -5,6 +5,7 @@ import {PickOne} from "./pickOne.tsx";
 import {RollAndResolve} from "./rollAndResolve.tsx";
 import {initialState, State} from "./state.ts";
 import {FireResolutionResult} from "./firetable.ts";
+import {PickMany} from "./pickMany.tsx";
 
 export function App() {
     const [state, setState] = useState<State>(initialState);
@@ -20,16 +21,13 @@ export function App() {
         }, [])
 
     }}>
-        <PickOne field="attackArty"/>
-        <PickOne field="defArty"/>
+        <PickMany field="arty"/>
         <PickOne field="defenderTerrain"/>
-        <PickOne field="hqAttackStars"/>
-        <PickOne field="hqDefStars"/>
+        <PickMany field="hqStars"/>
         <PickOne field="attackStars"/>
         <PickOne field="defStars"/>
         <PickOne field="attackSupport"/>
-        <PickOne field="attackIntegrity"/>
-        <PickOne field="defIntegrity"/>
+        <PickMany field="integrity"/>
         <PickOne field="defDetachment"/>
         <PickOne field="attackRoll"/>
         <PickOne field="defenderRoll"/>
