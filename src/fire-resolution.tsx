@@ -52,20 +52,20 @@ export function fireResolution(state: State) {
   if (state.defenderTerrain === 'entr. front' || state.defenderTerrain === 'def. in fort') {
     defender += 5
   }
-  attacker += state.hqStars.includes('attacker') ? 1 : 0;
-  defender += state.hqStars.includes('defender') ? 1 : 0;
+  attacker += state.attackHqStars ?? 0;
+  defender += state.defenderHqStars ?? 0;
   attacker += state.attackStars ?? 0;
   defender += state.defStars ?? 0;
-  attacker += state.attackSupport === 'yes' ? 2 : 0;
+  attacker += state.other.includes('attack support') ? 2 : 0;
   attacker += state.integrity.includes('attacker') ? 1 : 0;
   defender += state.integrity.includes('defender') ? 1 : 0;
-  attacker += state.defDetachment === 'yes' ? 4 : 0;
+  attacker += state.other.includes('is detachment') ? 4 : 0;
 
   const attackerTacticalPosition = tpd[state.attackRoll ?? 0][Math.min(attacker,10)-1]
   const defenderTacticalPosition = tpd[state.defenderRoll ?? 0][Math.min(defender,10)-1]
   const defenderRow = attackResultTable[attackerTacticalPosition] ?? {};
   let result = defenderRow[defenderTacticalPosition];
-  if(state.counterattack === 'yes') {
+  if(state.other.includes("counter attack")) {
     let originalDefender = defender;
     defender = attacker;
     attacker = originalDefender + 3;

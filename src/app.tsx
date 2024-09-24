@@ -23,17 +23,16 @@ export function App() {
     }}>
         <PickMany field="arty"/>
         <PickOne field="defenderTerrain"/>
-        <PickMany field="hqStars"/>
+        <PickOne field="attackHqStars"/>
+        <PickOne field="defenderHqStars"/>
         <PickOne field="attackStars"/>
         <PickOne field="defStars"/>
-        <PickOne field="attackSupport"/>
+        <PickMany field="other"/>
         <PickMany field="integrity"/>
-        <PickOne field="defDetachment"/>
         <PickOne field="attackRoll"/>
         <PickOne field="defenderRoll"/>
 
         <RollAndResolve state={state} onResult={setResult}/>
-        <PickOne field="counterattack"/>
 
     </Context.Provider>
 }
