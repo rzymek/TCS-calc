@@ -5,7 +5,7 @@ import {VitePWA} from 'vite-plugin-pwa'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-    base: '/tcs-calc',
+    base: '/',
     test: {
         environment: "node",
     },
@@ -14,10 +14,10 @@ export default defineConfig({
         VitePWA({
             registerType: 'autoUpdate',
             manifest: {
-                name: "TCS Calculator",
-                short_name: 'tcs-calc',
-                description: "TCS Calculator",
-                theme_color: "#FFFFE0",
+                name: "Rebel Fury Calculator",
+                short_name: 'rebel-fury calc',
+                description: "Rebel Fury Calculator",
+                theme_color: "#747577",
                 icons: [{
                     src: "pwa-64x64.png",
                     sizes: "64x64",

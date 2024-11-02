@@ -2,7 +2,7 @@ name: Bundle and deploy to Github Pages
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: ["master"]
+    branches: ["rebel-fury"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -35,13 +35,10 @@ jobs:
           npm i -g pnpm 
           pnpm i
           pnpm run build
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+      - name: Deploy
+        uses: dswistowski/surge-sh-action@v1
         with:
-          # Upload entire repository
-          path: 'dist'
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v3
+          domain: 'rebel-fury.surge.sh'
+          project: '.'
+          login: 'rzymek@gmail.com'
+          token: ${{ secrets.surge_token }}
