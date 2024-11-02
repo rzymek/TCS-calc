@@ -15,7 +15,7 @@ export default defineConfig({
             registerType: 'autoUpdate',
             manifest: {
                 name: "Rebel Fury Calculator",
-                id: 'rebel-fury-calc',
+                id: '/',
                 short_name: 'rebel-fury calc',
                 description: "Rebel Fury Calculator",
                 theme_color: "#747577",
