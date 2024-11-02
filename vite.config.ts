@@ -20,6 +20,8 @@ export default defineConfig({
                 description: "Rebel Fury Calculator",
                 theme_color: "#747577",
                 orientation: "portrait",
+                dir: 'ltr',
+                categories: ["games"],
                 icons: [{
                     src: "pwa-64x64.png",
                     sizes: "64x64",
