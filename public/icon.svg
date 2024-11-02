@@ -4,11 +4,11 @@
         xmlns:cc="http://creativecommons.org/ns#"
         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
         xmlns="http://www.w3.org/2000/svg"
-        version="1.1"
-        viewBox="0 0 64 64"
-        height="64mm"
+        id="svg831"
         width="64mm"
-        id="svg831">
+        height="64mm"
+        viewBox="0 0 64 64"
+        version="1.1">
   <metadata
      id="metadata837">
     <rdf:RDF>
@@ -23,46 +23,42 @@
   </metadata>
   <defs
      id="defs835" />
+  <path
+     d="M 62.024924,32.07319 46.950477,58.62597 16.925552,58.55278 1.9750737,31.92681 17.04952,5.37403 47.074446,5.44723 Z"
+     style="opacity:0.47999998;fill:#c7c8ca;fill-opacity:1;stroke:#103973;stroke-width:1.48251784;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="path823" />
   <g
-     transform="translate(0,-233)"
-     id="g829">
-    <path
-       d="M 62.024924,265.07319 46.950477,291.62597 16.925552,291.55278 1.9750737,264.92681 17.04952,238.37403 l 30.024926,0.0732 z"
-       style="opacity:0.47999998;fill:#c7c8ca;fill-opacity:1;stroke:#103973;stroke-width:1.48251784;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="path823" />
-    <g
-       transform="matrix(0.96454895,0,0,0.96454895,0.4592963,4.8298499)"
-       id="g867">
-      <text
-         id="text827"
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:23.18532944px;line-height:12.14999962;font-family:'Ubuntu Condensed';-inkscape-font-specification:'Ubuntu Condensed, ';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#963339;fill-opacity:1;stroke:#103973;stroke-width:0.12985377;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         x="53.98098"
-         y="273.43979"><tspan
-           id="tspan825"
-           x="32.737198"
-           y="273.43979"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Ubuntu Condensed';-inkscape-font-specification:'Ubuntu Condensed, ';text-align:center;text-anchor:middle;fill:#963339;fill-opacity:1;stroke:#103973;stroke-width:0.12985377;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">Rebel</tspan></text>
-      <text
+     transform="matrix(0.77289712,0,0,0.90709472,6.7432039,-212.85195)"
+     id="g867">
+    <text
+       id="text827"
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:23.18532944px;line-height:12.14999962;font-family:'Ubuntu Condensed';-inkscape-font-specification:'Ubuntu Condensed, ';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#963339;fill-opacity:1;stroke:#103973;stroke-width:0.12985377;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       x="53.98098"
+       y="273.43979"><tspan
+         id="tspan825"
+         x="32.737198"
+         y="273.43979"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:sans-serif;text-align:center;text-anchor:middle;fill:#963339;fill-opacity:1;stroke:#103973;stroke-width:0.12985377;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">Rebel</tspan></text>
+    <text
+       y="291.005"
+       x="53.923038"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:23.18532944px;line-height:12.14999962;font-family:'Ubuntu Condensed';-inkscape-font-specification:'Ubuntu Condensed, ';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#963339;fill-opacity:1;stroke:#103973;stroke-width:0.12985377;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       xml:space="preserve"
+       id="text861"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:sans-serif;text-align:center;text-anchor:middle;fill:#963339;fill-opacity:1;stroke:#103973;stroke-width:0.12985377;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          y="291.005"
-         x="53.923038"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:23.18532944px;line-height:12.14999962;font-family:'Ubuntu Condensed';-inkscape-font-specification:'Ubuntu Condensed, ';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#963339;fill-opacity:1;stroke:#103973;stroke-width:0.12985377;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         xml:space="preserve"
-         id="text861"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Ubuntu Condensed';-inkscape-font-specification:'Ubuntu Condensed, ';text-align:center;text-anchor:middle;fill:#963339;fill-opacity:1;stroke:#103973;stroke-width:0.12985377;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           y="291.005"
-           x="32.679256"
-           id="tspan859">Fury</tspan></text>
-    </g>
+         x="32.679256"
+         id="tspan859">Fury</tspan></text>
   </g>
   <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444447px;line-height:12.14999962;font-family:'Ubuntu Condensed';-inkscape-font-specification:'Ubuntu Condensed, ';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-     x="90.033897"
+     id="text841"
      y="49.355934"
-     id="text841"><tspan
-       id="tspan839"
-       x="90.033897"
+     x="90.033897"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444447px;line-height:12.14999962;font-family:sans-serif;-inkscape-font-specification:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332;"
+     xml:space="preserve"><tspan
+       style="stroke-width:0.26458332;-inkscape-font-specification:sans-serif;font-family:sans-serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;"
        y="85.381554"
-       style="stroke-width:0.26458332" /></text>
+       x="90.033897"
+       id="tspan839" /></text>
 </svg>
