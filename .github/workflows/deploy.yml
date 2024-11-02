@@ -25,7 +25,7 @@ jobs:
       - name: Deploy
         uses: dswistowski/surge-sh-action@v1
         with:
-          domain: 'rebel-fury.surge.sh'
-          project: '.'
+          domain: 'https://rebel-fury.surge.sh'
+          project: 'dist'
           login: 'rzymek@gmail.com'
           token: ${{ secrets.surge_token }}
