@@ -19,6 +19,10 @@ export const firetable = [
     ['-9 steps', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '66', '66'],
 ] as const;
 
+function narrow(min: number, x: number, max: number) {
+    return Math.max(min, Math.min(x, max));
+}
+
 export const fireTable = {
     column(resolution: { firepower: number, shift: number }) {
         const index = rawColumns.findIndex(colDef => {
@@ -33,7 +37,7 @@ export const fireTable = {
                 return false;
             }
         });
-        const effectiveIndex = Math.min(index + resolution.shift, rawColumns.length - 1)
+        const effectiveIndex = narrow(0, index + resolution.shift, rawColumns.length - 1)
         return {
             index: effectiveIndex,
             label: String(rawColumns[effectiveIndex])

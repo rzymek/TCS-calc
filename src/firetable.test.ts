@@ -12,7 +12,11 @@ describe('firetable', () => {
         const fs = require("fs/promises");
         await fs.writeFile("dist/firetable.csv", csv)
     })
+    it('dbg', () => {
+        expect(fireTable.column({firepower: 0, shift: -1}).label).toBe('0')
+    })
     it('column', () => {
+        expect(fireTable.column({firepower:0,shift:-1}).label).toBe('0')
         expect(fireTable.column({firepower:0,shift:0}).label).toBe('0')
         expect(fireTable.column({firepower:1,shift:0}).label).toBe('1')
         expect(fireTable.column({firepower:7,shift:0}).label).toBe('7-8')
